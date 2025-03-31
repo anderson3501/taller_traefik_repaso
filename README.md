@@ -1,4 +1,4 @@
-# taller_traefik_repaso
+# taller_traefik_repaso Anderson Carvajal y Harold Rodriguez
 
 ¿Cómo detecta Traefik los servicios configurados en Docker Compose?
  Traefik utiliza el provider Docker, leyendo los labels definidos en el archivo docker-compose.yml para identificar y configurar automáticamente los routers y servicios.
