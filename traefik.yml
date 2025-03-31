@@ -1,0 +1,20 @@
+entryPoints:
+  web:
+    address: ":80"
+
+api:
+  dashboard: true
+  insecure: true
+
+providers:
+  docker:
+    exposedByDefault: false
+  file:
+    filename: "/traefik.yml"
+
+http:
+  middlewares:
+    auth:
+      basicAuth:
+        users:
+          - "admin:$$2y$$05$$Ekb1VLc3nPGeE99i15CjM.6zyFhFQ4c7.2Hqkgd/pYKTZ6HtUdsBu"
